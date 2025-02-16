@@ -32,34 +32,34 @@ document.addEventListener('DOMContentLoaded', function() {
     const clue1Submit = document.getElementById('clue1-submit');
     if (clue1Submit) {
         clue1Submit.addEventListener('click', function() {
-            //const answer = document.getElementById('clue1-answer').value.toLowerCase();
-            //if (answer === "your answer") {  // Replace with the correct answer for Clue 1
+            const answer = document.getElementById('clue1-answer').value.toLowerCase();
+            if (answer === "guess") {  // Replace with the correct answer for Clue 1
                 document.getElementById('clue2').classList.add('unlocked');
                 document.getElementById('clue1-content').style.display = 'none';
                 document.getElementById('clue2').style.cursor = 'pointer';
                 document.getElementById('clue2').addEventListener('click', function() {
                     document.getElementById('clue2-content').style.display = 'block';
             });
-           // } else {
-           //     alert("Try again!");
-           // }
+           } else {
+               alert("Try again!");
+           }
         });
     }
     // Clue 2
     const clue2Submit = document.getElementById('clue2-submit');
     if (clue2Submit) {
         clue2Submit.addEventListener('click', function() {
-            //const answer = document.getElementById('clue2-answer').value.toLowerCase();
-            //if (answer === "your answer") {  // Replace with the correct answer for Clue 1
+            const answer = document.getElementById('clue2-answer').value.toLowerCase();
+            if (answer === "guess") {  // Replace with the correct answer for Clue 1
             document.getElementById('clue3').classList.add('unlocked');
             document.getElementById('clue2-content').style.display = 'none';
             document.getElementById('clue3').style.cursor = 'pointer';
             document.getElementById('clue3').addEventListener('click', function() {
                 document.getElementById('clue3-content').style.display = 'block';
             });
-           // } else {
-           //   alert("Try again!");
-           // }
+           } else {
+             alert("Try again!");
+           }
         });
     }
 
