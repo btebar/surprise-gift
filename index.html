@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Surprise Trip!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Birthday Surprise!</h1>
+
+        <div id="countdown"></div>
+
+        <div class="clue" id="clue1">
+            <span class="lock-icon">&#128274;</span> Clue 1
+        </div>
+        <div class="clue-content" id="clue1-content" style="display: none;">
+            <p>Pack your bags!  Where do you think we're going?</p>
+            <input type="text" id="clue1-answer" placeholder="Your Guess">
+            <button id="clue1-submit">Unlock</button>
+        </div>
+
+        <div class="clue" id="clue2">
+            <span class="lock-icon">&#128274;</span> Clue 2
+        </div>
+         <div class="clue-content" id="clue2-content" style="display: none;">
+            <p>We are flying!</p>
+            <input type="text" id="clue2-answer" placeholder="Your Guess">
+            <button id="clue2-submit">Unlock</button>
+        </div>
+
+        <div class="clue" id="clue3">
+            <span class="lock-icon">&#128274;</span> Clue 3
+        </div>
+        <div class="clue-content" id="clue3-content" style="display: none;">
+            <p>First Stop: Think ancient Greece, beautiful beaches, and Venetian architecture. What island is this?</p>
+            <input type="text" id="clue3-answer" placeholder="Island Name">
+            <button id="clue3-submit">Unlock</button>
+        </div>
+
+        <div class="clue" id="clue4">
+            <span class="lock-icon">&#128274;</span> Clue 4
+        </div>
+        <div class="clue-content" id="clue4-content" style="display: none;">
+            <p>Next Up: We're hopping over to a country known for its stunning mountains, vibrant culture, and the "Land of Eagles."  Which country is it?</p>
+            <input type="text" id="clue4-answer" placeholder="Country Name">
+            <button id="clue4-submit">Unlock</button>
+        </div>
+
+        <div class="clue" id="final-reveal">
+            <span class="lock-icon">&#128274;</span> Final Reveal
+        </div>
+        <div class="clue-content" id="final-reveal-content" style="display: none;">
+            <h2>Our Trip to Corfu and Albania!</h2>
+            <p>Flights: [Flight Confirmation Numbers Here]</p>
+            <p>Corfu Hotel: [Hotel Name]</p>
+            <p>Albania Hotel: [Hotel Name]</p>
+            <p>A special message from me: [Your Message]</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
